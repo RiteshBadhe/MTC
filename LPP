@@ -1,0 +1,1 @@
+from pulp import* lpp=LpProblem(name='LPP', sense=LpMaximize) x=LpVariable("x", lowBound=0) y=LpVariable("y", lowBound=0) lpp +=(4*x + 6 * y <= 24) lpp +=(5*x + 3* y <= 15) lpp += (150*x + 75 * y) lpp
